@@ -38,8 +38,8 @@ const restablecer = (e) =>{
   grupo.value = '';
 }
 
-
 let cambio = ref(true)
+
 </script>
 
 <template>
@@ -141,7 +141,7 @@ let cambio = ref(true)
     </form>
   </div>
 
-  <div v-else>
+  <div>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem nisi, omnis voluptatum a eligendi eos ullam? Architecto quidem quo possimus? Soluta similique commodi ea voluptatem. Eius mollitia magni quisquam totam?</p>
   </div>
 </template>

@@ -23,17 +23,14 @@ const guardar = (e) => {
   cambio.value=false
 }
 
-const restablecer = (e) =>{
+const restablecer = (e) => {
   e.preventDefault();
   //Limpiar los campos
   nombre.value = '';
   apellido.value = '';
-  genero.value = '';
   edad.value = '';
   email.value = '';
   password.value = '';
-  opciones.value = [];
-  administrador.value = false;
   observaciones.value = '';
   grupo.value = '';
 }
@@ -57,7 +54,7 @@ let cambio = ref(true)
       <input type="text" id="apellido" v-model="registro.apellido">
     </label>
     <br>
-    <label>
+    <label >
       <strong>Género:</strong>
       <br>
       <label for="g-masculino">Masculino<input type="radio" id="g-masculino" name="genero" value="m" v-model="registro.genero"></label>
@@ -84,8 +81,8 @@ let cambio = ref(true)
     </label>
     <br>
     <label for="HTML">HTML <input type="checkbox" id="HTML" v-model="registro.opciones" value="HTML"></label>
-    <label for="HTML">CSS <input type="checkbox" id="CSS" v-model="registro.opciones" value="CSS"></label>
-    <label for="HTML">javascript <input type="checkbox" id="javascript" v-model="registro.opciones" value="javascript"></label>
+    <label for="CSS">CSS <input type="checkbox" id="CSS" v-model="registro.opciones" value="CSS"></label>
+    <label for="javascript">javascript <input type="checkbox" id="javascript" v-model="registro.opciones" value="javascript"></label>
     <br>
     <label for="administrador"></label>
     <input type="checkbox" v-model="registro.administrador">
